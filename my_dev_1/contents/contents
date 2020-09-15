@@ -1,0 +1,51 @@
+-----phpファイルの構成------
+
+---joinフォルダ
+    ・index.php
+        ログイン画面
+    ・check.php
+        ログイン情報の確認
+    ・thanks.php
+        ログイン成功画面->top画面へのリンク
+
+---メインフォルダ
+    ・index.php
+        ホーム画面(ツイート表示画面)
+    ・login.php
+        再ログイン画面
+    ・input.php
+        ツイート画面
+    ・view.php
+        ツイート詳細画面(リプライの表示込み)
+    ・delete.php
+        ツイート削除
+    ・logout.php
+        ログアウト
+    ・db_connect.php
+        データベース接続用テンプレート
+
+-----データベースの構成-----
+
+---members(colum7)
+    ・id->int
+    ・name->varchar
+    ・email->varchar
+    ・password->varchar
+    ・picture->varchar
+    ・created->datetime
+    ・modified->timestamp
+
+---posts(colum5)
+    ・id->int
+    ・message->text
+    ・member_id->int
+    ・created->datetime
+    ・modified->timestamp
+
+---reply(colum6)
+    ・id->int
+    ・reply_message->text
+    ・reply_id->int
+    ・reply_member_id->int
+    ・created->datetime
+    ・modified->timestamp

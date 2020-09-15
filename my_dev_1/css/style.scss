@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/*=============================================
+共通
+=============================================*/
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: auto;
+}
+
+header {
+    padding: 20px 0;
+    background-color: cadetblue;
+    color: #fff;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.error {
+    color: red;
+}
+
+.submit_btn_wrapper {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*=============================================
+join/index.php
+=============================================*/
+
+.join_form {
+    width: 800px;
+    margin: auto;
+    background-color: rgb(226, 224, 224);
+}
+
+.join_wrapper {
+    margin-top: 80px;
+    padding: 60px 0;
+    margin: auto;
+}
+
+.join_wrapper_text {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.join_list {
+    padding: 40px 80px;
+}
+
+.join_item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.join_name {
+    flex: 0 0 30%;
+}
+
+.join_contents {
+    flex: 0 1 100%;
+}
+
+.join_contents_input {
+    width: 100%;
+    height: 36px;
+}
+
+/*=============================================
+join/check.php
+=============================================*/
+
+/*=============================================
+join/index.php
+=============================================*/
+
+.thanks_message {
+    margin-bottom: 40px;
+}
+
+.thanks_container {
+    text-align: center;
+}
+
+/*=============================================
+login.php
+=============================================*/
+
+.login_inner {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.checkbox_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    input {
+        margin-left: 12px;
+    }
+}
+
+/*=============================================
+index.php
+=============================================*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.main {
+    padding-top: 40px;
+    margin-bottom: 120px;
+}
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_top {
+    display: flex;
+    justify-content: center;
+
+    h1, h2 {
+        margin-left: 48px;
+    }
+}
+
+.menu_list {
+    display: flex;
+    justify-content: center;
+}
+
+.tweet_item {
+    border-bottom: 1px solid #808080;
+    padding: 24px;
+}
+
+.menu_item {
+    margin-left: 48px;
+}
+
+.tweet_list {
+    width: 65%;
+    margin: auto;
+    margin-top: 48px;
+}
+
+.tweet_head {
+    display: flex;  
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.tweet_body {
+    margin-bottom: 24px;
+}
+
+.tweet_footer {
+    display: flex;
+    justify-content: center;
+}
+
+.account_icon {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgb(223, 221, 221);
+    width: 70px;
+    border-radius: 50%;
+
+    &::before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.account_icon {
+    margin-right: 24px;
+}
+
+.tweet_delete_link {
+    margin-left: 12px;
+}
+
+/*=============================================
+input.php
+=============================================*/
+
+.input_from {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submit_wrapper {
+    text-align: center;
+    margin-top: 24px;
+}
+
+/*=============================================
+view.php
+=============================================*/
+
+.view_contents {
+    margin-bottom: 80px;
+}
+
+.view_tweet_item {
+    border-bottom: tomato 3px solid;
+}
+
+.reply_form {
+    text-align: center;
+    background-color: cadetblue;
+    padding: 24px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.reply_input {
+    height: 40px;
+    width: 50%;
+}
+
+.reply_submit {
+    height: 40px;
+}
